@@ -9,7 +9,14 @@ export const AuthRoutes: IRouterOption[] = [
     path: '/sign-in',
     component: SignIn,
     name: EAuthRoutes.SIGN_IN,
-    exact: true,
+    meta: {
+      requireAuth: false
+    }
+  },
+  {
+    path: '/sign-in/:id',
+    component: ForgotPassword,
+    name: EAuthRoutes.FORGOT_PASSWORD,
     meta: {
       requireAuth: false
     }
