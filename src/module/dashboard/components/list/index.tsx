@@ -4,7 +4,7 @@ export const Dashboard: FC = () => {
   return (
     <>
       Welcome to Dashboard
-      hello ngan
+      ngan
     </>
   )
 }
